@@ -40,6 +40,9 @@ public class Main {
         (padrão) zero e os demais atributos são obrigatórios.
          */
 
+        ContaCorrente cc = new ContaCorrente(449685, "Benedito");
 
+        System.out.println(cc.nome);
+        System.out.println(cc.conta);
     }
 }
