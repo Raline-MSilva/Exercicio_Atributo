@@ -44,5 +44,19 @@ public class Main {
 
         System.out.println(cc.nome);
         System.out.println(cc.conta);
+
+        /*Crie uma classe para modelar um carro. Todo carro tem
+        quantidade de portas, modelo, marca e potência. No construtor, a potência é
+        opcional, com valor default (padrão) 2.0 e os demais atributos são
+        obrigatórios.
+         */
+
+        Carro obj_carro = new Carro();
+        obj_carro.portas = 4;
+        obj_carro.modelo = "SUV";
+        obj_carro.marca = "Hyundai";
+
+        System.out.println(obj_carro.marca);
+        System.out.println(obj_carro.modelo);
     }
 }
