@@ -1,4 +1,9 @@
-package br.com.zup;
+package br.com.zup.listaAtributos;
+
+import br.com.zup.listaAtributos.Bola;
+import br.com.zup.listaAtributos.Carro;
+import br.com.zup.listaAtributos.ContaCorrente;
+import br.com.zup.listaAtributos.Pessoa;
 
 public class Main {
 
