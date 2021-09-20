@@ -14,11 +14,11 @@ public class main {
      */
 
         Scanner leitor = new Scanner(System.in);
-        Map<String, String> continente = new HashMap<String, String>();
+        Map<String, Double> continente = new HashMap<String, Double>();
 
-        paises belgica = new paises("Bélgica", "30.689", "11,46 milhões");
-        paises austria = new paises("Aústria", "83.879", "8,859 milhões");
-        paises bulgaria = new paises("Bulgária", "110 912", "7 milhões");
-        paises albania = new paises("Albânia", "28.748", "2,862 milhões");
+        paises belgica = new paises("Bélgica", 30.689, 11.46);
+        paises austria = new paises("Aústria", 83.879, 8.859);
+        paises bulgaria = new paises("Bulgária", 110.912, 7.0);
+        paises albania = new paises("Albânia", 28.748, 2.862);
     }
 }
