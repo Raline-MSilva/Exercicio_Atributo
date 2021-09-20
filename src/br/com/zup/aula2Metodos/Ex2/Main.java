@@ -1,4 +1,6 @@
-package br.com.zup.aula2Metodos;
+package br.com.zup.aula2Metodos.Ex2;
+
+import br.com.zup.aula2Metodos.Ex2.ContaBancaria;
 
 public class Main {
     public static void main(String[] args) {

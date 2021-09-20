@@ -1,4 +1,4 @@
-package br.com.zup.aula2Metodos;
+package br.com.zup.aula2Metodos.Ex2;
 /*Crie uma classe referente à uma conta bancária, que possui como atributos o seu
 número, saldo e o nome do correntista. Crie também o método saque() que serve
 para retirar o certo valor do saldo, o método depósito() que serve para adicionar um
