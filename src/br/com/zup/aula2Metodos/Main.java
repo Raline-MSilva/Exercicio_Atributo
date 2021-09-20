@@ -5,13 +5,18 @@ public class Main {
         ContaBancaria cb = new ContaBancaria("12345",500, "Benedito");
 
         //mostrando dados da conta
-        cb.conta();
+        cb.extrato();
         System.out.println("-------------");
 
         //realizando um saque
         cb.saque(50);
-        cb.conta();
-        System.out.println("---------");
+        cb.extrato();
+        System.out.println("--------------");
+
+        //realizando um depósito
+        cb.deposito(150);
+        cb.extrato();
+        System.out.println("------------");
 
     }
 

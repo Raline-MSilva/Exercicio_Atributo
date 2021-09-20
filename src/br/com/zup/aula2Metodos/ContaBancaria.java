@@ -17,13 +17,18 @@ public class ContaBancaria {
         this.nomeCorrentista = nomeCorrentista;
     }
 
-    public void conta (){
+    public void extrato (){
+        System.out.println("*Extrato Bancário*");
         System.out.println("Nome: " + nomeCorrentista);
-        System.out.println("Número: " + numConta);
-        System.out.println("Saldo: " + saldo);
+        System.out.println("Número da Conta: " + numConta);
+        System.out.println("Seu Saldo: " + saldo);
     }
     public void saque (double solicitaSaque){
         saldo = saldo - solicitaSaque;
+    }
+
+    public void deposito (double novoDeposito){
+        saldo = saldo + novoDeposito;
     }
 
 }
