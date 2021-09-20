@@ -22,7 +22,20 @@ public class Carro {
         this.valor = valor;
     }
 
-    public void desconto (double darDesconto){
-        valor = valor - darDesconto;
+    public void fichaTecnica (){
+        System.out.println("Carro: " + nome);
+        System.out.println("Peso: " + peso);
+        System.out.println("Fabricante: " + fabricante);
+        System.out.println("Cor: " + cor);
+        System.out.println("Valor: " + valor);
     }
+
+    public void Dardesconto (double valorDesconto){
+        valor = valor - valorDesconto;
+    }
+
+    public void pintar (String corNova){
+        cor = corNova;
+    }
+
 }
