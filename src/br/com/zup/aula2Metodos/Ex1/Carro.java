@@ -1,4 +1,4 @@
-package br.com.zup.aula2Metodos;
+package br.com.zup.aula2Metodos.Ex1;
 /*Crie uma classe que represente um carro, que tenha como características o
     nome, o peso, a fabricante, a cor e o valor do carro. Crie também o método
     darDesconto() que servirá para diminuir o preço do carro e o método pintar(), que
