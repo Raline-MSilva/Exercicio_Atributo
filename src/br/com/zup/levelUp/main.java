@@ -1,7 +1,7 @@
 package br.com.zup.levelUp;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class main {
@@ -13,12 +13,44 @@ public class main {
     que deverá decidir se vai listar os países do continente ou sair do programa.
      */
 
+        //criando lista
         Scanner leitor = new Scanner(System.in);
-        Map<String, Double> continente = new HashMap<String, Double>();
+        List <paises> continente = new ArrayList<>();
 
-        paises belgica = new paises("Bélgica", 30.689, 11.46);
-        paises austria = new paises("Aústria", 83.879, 8.859);
-        paises bulgaria = new paises("Bulgária", 110.912, 7.0);
-        paises albania = new paises("Albânia", 28.748, 2.862);
+        paises pais1 = new paises("Bélgica", 30689, 1146);
+        paises pais2 = new paises("Aústria", 83879, 8859);
+        paises pais3 = new paises("Bulgária", 110912, 700000);
+        paises pais4 = new paises("Albânia", 28748, 2862);
+
+        continente.add(pais1);
+        continente.add(pais2);
+        continente.add(pais3);
+        continente.add(pais4);
+
+        //criando menu de opções
+        boolean menu = true;
+        while (menu){
+            System.out.println("Por favor digite 1 para listar os países");
+            System.out.println("Digite 2 para sair do menu");
+            int opcao = leitor.nextInt();
+
+            if (opcao == 1){
+                for (paises referencia: continente){
+                    System.out.println("O nome do país é: ");
+                    System.out.println(referencia.nome);
+                    System.out.println("A extensão territorial do País é: ");
+                    System.out.println(referencia.extensao);
+                    System.out.println("A população do país é: ");
+                    System.out.println(referencia.populacao);
+                }
+            }
+            //saindo do menu
+            else if (opcao == 2){
+                menu = false;
+                System.out.println("Você saiu do menu");
+            }
+        }
+
+
     }
 }
