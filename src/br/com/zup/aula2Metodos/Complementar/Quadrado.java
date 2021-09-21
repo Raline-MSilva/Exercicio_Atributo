@@ -6,21 +6,22 @@ Classe Quadrado: Crie uma classe que modele um quadrado:
 Área;
  */
 public class Quadrado {
-    double tamanho;
-    double lado;
+    double tamanhoLado;
+    double area;
 
-    public Quadrado(double tamanho, double lado){
-        this.tamanho = tamanho;
-        this.lado = lado;
+    public Quadrado(double tamanhoLado){
+        this.tamanhoLado = tamanhoLado;
+        this.area = area;
     }
 
-    public void mostrarQuadrado (){
-        System.out.println("Tamanho: " + tamanho);
-        System.out.println("Lado: " + lado);
-    }
     public void mudarValorLado(double valorLado){
-        lado = valorLado;
+        tamanhoLado = valorLado;
     }
-
+    public void retornaValorLado (){
+        System.out.println("Lado: " + tamanhoLado);
+    }
+    public void calcularArea(){
+         area = tamanhoLado * tamanhoLado;
+    }
 
 }
