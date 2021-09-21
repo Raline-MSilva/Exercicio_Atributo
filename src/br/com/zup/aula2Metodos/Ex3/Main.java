@@ -21,8 +21,8 @@ public class Main {
         System.out.println("------------------");
 
         // descendo
-        edificio.desce(8);
-        System.out.println("Descendo pro: " + edificio.terreo);
+        edificio.desce(2);
+        System.out.println("Descendo pro: " + edificio.andares);
 
     }
 }
