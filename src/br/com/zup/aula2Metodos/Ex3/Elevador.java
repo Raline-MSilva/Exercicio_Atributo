@@ -14,12 +14,11 @@ public class Elevador {
     int andares;
     double capacidade;
     int qntPessoas;
+    int andarAtual = terreo;
 
     public Elevador(int andares, double capacidade) {
-        this.terreo = terreo;
         this.andares = andares;
         this.capacidade = capacidade;
-        this.qntPessoas = qntPessoas;
 
     }
 
@@ -54,14 +53,14 @@ public class Elevador {
     }
     public void sobe (int subir){
         if (subir < andares){
-            terreo = terreo + subir;
+            andarAtual = andarAtual + subir;
         }else {
             System.out.println("Nao tem pra onde subir");
         }
     }
     public void desce (int descer){
-        if (descer > terreo & descer < andares){
-            terreo = descer;
+        if (descer > terreo  & descer < andares){
+            andarAtual -= descer;
         }else {
             System.out.println("não desce mais, já estamos no terreo");
         }

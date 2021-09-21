@@ -16,13 +16,13 @@ public class Main {
         System.out.println("-------------");
 
         // subindo
-        edificio.sobe(10);
-        System.out.println("Subindo pro: " + edificio.terreo);
+        edificio.sobe(8);
+        System.out.println("Subindo pro: " + edificio.andarAtual);
         System.out.println("------------------");
 
         // descendo
-        edificio.desce(2);
-        System.out.println("Descendo pro: " + edificio.andares);
+        edificio.desce(0);
+        System.out.println("Descendo pro: " + edificio.andarAtual);
 
     }
 }
