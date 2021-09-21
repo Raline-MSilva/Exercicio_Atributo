@@ -10,11 +10,11 @@ quantas pessoas estão presentes nele.
 - Desce : para descer um andar (não deve descer se já estiver no térreo);
  */
 public class Elevador {
-    int terreo = 0;
-    int andares;
-    double capacidade;
-    int qntPessoas;
-    int andarAtual = terreo;
+    private int terreo = 0;
+    private int andares;
+    private double capacidade;
+    private int qntPessoas;
+    private int andarAtual = terreo;
 
     public Elevador(int andares, double capacidade) {
         this.andares = andares;
@@ -22,7 +22,27 @@ public class Elevador {
 
     }
 
-    public void plantaElevador() {
+    public int getTerreo (){
+        return terreo;
+    }
+
+    public int getAndares (){
+        return andares;
+    }
+
+    public double getCapacidade (){
+        return capacidade;
+    }
+
+    public int getQntPessoas(){
+        return qntPessoas;
+    }
+
+    public int getAndarAtual(){
+        return andarAtual;
+    }
+
+    public void setPlantaElevador() {
         System.out.println("--Elevador--");
         System.out.println("Terreo: " + terreo);
         System.out.println("Quantidade de andares: " + andares);
@@ -33,7 +53,7 @@ public class Elevador {
 
     //Entra : para acrescentar uma pessoa no elevador (só deve acrescentar se ainda
     //houver espaço);
-    public void entra(int novaPessoa) {
+    public void setEntra(int novaPessoa) {
         if (novaPessoa <= capacidade) {
             qntPessoas = qntPessoas + novaPessoa;
         } else {
@@ -43,7 +63,7 @@ public class Elevador {
 
     //- Sai : para remover uma pessoa do elevador (só deve remover se houver alguém
     //dentro dele);
-    public void sai(int saiPessoa) {
+    public void setSai(int saiPessoa) {
         if (saiPessoa > 0 & saiPessoa <= capacidade) {
             qntPessoas = qntPessoas - saiPessoa;
         } else {
@@ -52,7 +72,7 @@ public class Elevador {
 
     }
     //coloquei a exibição na condição. E na condição não sobe mais que o terreo
-    public void sobe (int subir){
+    public void setSobe (int subir){
         if (subir <= andares & andarAtual < andares & subir > terreo){
             andarAtual = subir;
             System.out.println("Subindo pro: " + andarAtual);
@@ -61,7 +81,7 @@ public class Elevador {
         }
     }
     // não desce mais que o terreo
-    public void desce (int descer){
+    public void setDesce (int descer){
         if (descer >= terreo  & andarAtual > terreo){
             andarAtual = descer;
             System.out.println("Descendo pro: " + andarAtual);
