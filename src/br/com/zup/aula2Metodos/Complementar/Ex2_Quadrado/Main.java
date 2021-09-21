@@ -1,4 +1,6 @@
-package br.com.zup.aula2Metodos.Complementar;
+package br.com.zup.aula2Metodos.Complementar.Ex2_Quadrado;
+
+import br.com.zup.aula2Metodos.Complementar.Ex2_Quadrado.Quadrado;
 
 public class Main {
     public static void main(String[] args) {

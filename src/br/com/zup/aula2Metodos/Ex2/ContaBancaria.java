@@ -7,14 +7,26 @@ correntista, o número da conta e o saldo. Crie um programa principal e demonstr
 utilização dos métodos implementados.
  */
 public class ContaBancaria {
-    String numConta;
-    double saldo;
-    String nomeCorrentista;
+    private String numConta;
+    private double saldo;
+    private String nomeCorrentista;
 
     public ContaBancaria (String numConta, double saldo, String nomeCorrentista){
         this.numConta = numConta;
         this.saldo = saldo;
         this.nomeCorrentista = nomeCorrentista;
+    }
+
+    public String getNumConta (){
+        return numConta;
+    }
+
+    public double getSaldo (){
+        return saldo;
+    }
+
+    public String getNomeCorrentista (){
+        return nomeCorrentista;
     }
 
     public void extrato (){
