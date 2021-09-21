@@ -7,17 +7,17 @@ public class Main {
         ContaBancaria cb = new ContaBancaria("12345",500, "Benedito");
 
         //mostrando dados da conta
-        cb.extrato();
+        cb.setExtrato();
         System.out.println("-------------");
 
         //realizando um saque
-        cb.saque(50);
-        cb.extrato();
+        cb.setSaque(50);
+        cb.setExtrato();
         System.out.println("--------------");
 
         //realizando um depósito
-        cb.deposito(150);
-        cb.extrato();
+        cb.setDeposito(150);
+        cb.setExtrato();
         System.out.println("------------");
 
     }
