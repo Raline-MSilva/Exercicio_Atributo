@@ -5,5 +5,10 @@ Crie os métodos públicos necessários para sets e gets e também um método pa
 Crie um método para calcular a idade da pessoa.
  */
 public class Pessoa {
+    private String nome;
+    private String dataNascimento;
+    private double altura;
+
+
 
 }
