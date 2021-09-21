@@ -14,14 +14,14 @@ public class Bola {
         this.circuferencia = circuferencia;
         this.material = material;
     }
-
-    public void mostrarBola (){
-        System.out.println("Cor da Bola: " + cor);
-        System.out.println("Circuferência: " + circuferencia);
-        System.out.println("Material: " + material);
-    }
-
+//Métodos: trocaCor e mostraCor
     public void trocarCor(String corNova){
         cor = corNova;
+    }
+
+    public void mostrarCor (){
+        System.out.println("Cor da Bola: " + cor);
+        //System.out.println("Circuferência: " + circuferencia);
+        //System.out.println("Material: " + material);
     }
 }

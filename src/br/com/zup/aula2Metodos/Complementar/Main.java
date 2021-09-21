@@ -5,11 +5,11 @@ public class Main {
         Bola jabulani = new Bola("Verde", "Redonda", "Couro");
 
         //mostrando a bola
-        jabulani.mostrarBola();
+        jabulani.mostrarCor();
         System.out.println("--------------");
 
         //mudando a cor da bola
         jabulani.trocarCor("Azul");
-        jabulani.mostrarBola();
+        jabulani.mostrarCor();
     }
 }
