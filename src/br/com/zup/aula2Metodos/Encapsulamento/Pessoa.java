@@ -5,10 +5,48 @@ Crie os métodos públicos necessários para sets e gets e também um método pa
 Crie um método para calcular a idade da pessoa.
  */
 public class Pessoa {
-    private String nome;
-    private String dataNascimento;
-    private double altura;
+   private String nome;
+   private int anoNascimento = 2010;
+   private int anoAtual = 2021;
+   private double altura;
+   private int idade;
 
+   public Pessoa (){
 
+   }
+
+   public  Pessoa (String nome, double altura){
+       this.nome = nome;
+       this.anoNascimento = anoNascimento;
+       this.anoAtual = anoAtual;
+       this.altura = altura;
+       this.idade = idade;
+   }
+
+   public String getNome(){
+       return nome;
+   }
+   public int getAnoNascimento(){
+       return anoNascimento;
+   }
+   public int getAnoAtual(){
+       return anoAtual;
+   }
+   public double getAltura(){
+       return altura;
+   }
+   public int getIdade(){
+       return idade;
+   }
+   public void setMostrarPessoa(){
+       System.out.println("Nome: " + nome);
+       System.out.println("Ano nascimento: " + anoNascimento);
+       System.out.println("Altura: " + altura);
+
+    }
+    public void setCalculoIdade(){
+       idade = anoAtual - anoNascimento;
+        System.out.println("Idade: " + idade);
+    }
 
 }
