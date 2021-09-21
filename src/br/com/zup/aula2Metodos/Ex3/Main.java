@@ -6,23 +6,26 @@ public class Main {
         //edificio.plantaElevador();
 
         // entrando mais uma pessoa
-        edificio.entra(10);
+        edificio.entra(8);
         System.out.println("Quantidade atual de passageiros: " + edificio.qntPessoas);
         System.out.println("--------------");
 
         //saindo uma pessoa
-        edificio.sai(2);
+        edificio.sai(6);
         System.out.println("passageiros depois da saída: " + edificio.qntPessoas);
         System.out.println("-------------");
 
         // subindo
         edificio.sobe(8);
-        System.out.println("Subindo pro: " + edificio.andarAtual);
         System.out.println("------------------");
 
         // descendo
-        edificio.desce(0);
-        System.out.println("Descendo pro: " + edificio.andarAtual);
+        edificio.desce(1);
+
+        edificio.sobe(0);
+
+        System.out.println("------------------");
+
 
     }
 }

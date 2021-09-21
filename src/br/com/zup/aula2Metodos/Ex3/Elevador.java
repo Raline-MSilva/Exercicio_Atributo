@@ -51,16 +51,20 @@ public class Elevador {
         }
 
     }
+    //coloquei a exibição na condição. E na condição não sobe mais que o terreo
     public void sobe (int subir){
-        if (subir < andares){
-            andarAtual = andarAtual + subir;
+        if (subir <= andares & andarAtual < andares & subir > terreo){
+            andarAtual = subir;
+            System.out.println("Subindo pro: " + andarAtual);
         }else {
             System.out.println("Nao tem pra onde subir");
         }
     }
+    // não desce mais que o terreo
     public void desce (int descer){
-        if (descer > terreo  & descer < andares){
-            andarAtual -= descer;
+        if (descer >= terreo  & andarAtual > terreo){
+            andarAtual = descer;
+            System.out.println("Descendo pro: " + andarAtual);
         }else {
             System.out.println("não desce mais, já estamos no terreo");
         }
