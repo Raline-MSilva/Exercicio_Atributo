@@ -11,16 +11,10 @@ public class Pessoa {
    private double altura;
    private int idade;
 
-   public Pessoa (){
-
-   }
-
    public  Pessoa (String nome, double altura){
        this.nome = nome;
-       this.anoNascimento = anoNascimento;
-       this.anoAtual = anoAtual;
        this.altura = altura;
-       this.idade = idade;
+
    }
 
    public String getNome(){
