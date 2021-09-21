@@ -16,7 +16,7 @@ public class CartaoCredito {
         this.nomeCliente = nomeCliente;
     }
     public void aumentaLimite (double maisLimite){
-        limite = maisLimite;
+        limite = limite + maisLimite;
 
     }
     public void diminuiLimite (double menosLimite){
@@ -30,9 +30,9 @@ public class CartaoCredito {
             System.out.println("Limite insuficiente!");
         }
     }
-    public void fatura (double extratoFatura){
-        System.out.println("Seu limite no momento é R$: " + limite);
-        System.out.println("Sua fatura é R$: " + saldoFatura);
+    public void extratoFatura(){
+        System.out.println("limite no momento é R$: " + limite);
+        System.out.println("Valor da fatura R$: " + saldoFatura);
     }
 
 }
