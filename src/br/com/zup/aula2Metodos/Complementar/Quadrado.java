@@ -14,4 +14,13 @@ public class Quadrado {
         this.lado = lado;
     }
 
+    public void mostrarQuadrado (){
+        System.out.println("Tamanho: " + tamanho);
+        System.out.println("Lado: " + lado);
+    }
+    public void mudarValorLado(double valorLado){
+        lado = valorLado;
+    }
+
+
 }

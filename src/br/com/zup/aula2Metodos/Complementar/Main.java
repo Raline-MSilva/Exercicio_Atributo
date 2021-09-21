@@ -2,14 +2,11 @@ package br.com.zup.aula2Metodos.Complementar;
 
 public class Main {
     public static void main(String[] args) {
-        Bola jabulani = new Bola("Verde", "Redonda", "Couro");
+        Quadrado quadro = new Quadrado(4,2);
 
-        //mostrando a bola
-        jabulani.mostrarCor();
-        System.out.println("--------------");
-
-        //mudando a cor da bola
-        jabulani.trocarCor("Azul");
-        jabulani.mostrarCor();
+        quadro.mostrarQuadrado();
+        //mudando o lado
+        quadro.mudarValorLado(3);
+        quadro.mostrarQuadrado();
     }
 }

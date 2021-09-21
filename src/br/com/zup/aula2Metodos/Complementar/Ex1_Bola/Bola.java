@@ -1,4 +1,4 @@
-package br.com.zup.aula2Metodos.Complementar;
+package br.com.zup.aula2Metodos.Complementar.Ex1_Bola;
 /*
 Classe Bola: Crie uma chamada Jabulani
 1. Atributos: Cor, circunferência, material
