@@ -32,14 +32,15 @@ public class Pessoa {
    public int getIdade(){
        return idade;
    }
+
    public void setMostrarPessoa(){
-       System.out.println("Nome: " + nome);
-       System.out.println("Ano nascimento: " + anoNascimento);
-       System.out.println("Altura: " + altura);
+       System.out.println("Nome: " + getNome());
+       System.out.println("Ano nascimento: " + getAnoNascimento());
+       System.out.println("Altura: " + getAltura());
 
     }
     public void setCalculoIdade(){
-       idade = anoAtual - anoNascimento;
+       idade = getAnoAtual() - getAnoNascimento();
         System.out.println("Idade: " + idade);
     }
 
