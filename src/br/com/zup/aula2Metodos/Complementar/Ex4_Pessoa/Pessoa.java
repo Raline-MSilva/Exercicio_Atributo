@@ -1,4 +1,4 @@
-package br.com.zup.aula2Metodos.Complementar;
+package br.com.zup.aula2Metodos.Complementar.Ex4_Pessoa;
 
 /*
 Classe Pessoa: Crie uma classe que modele uma pessoa:
@@ -66,5 +66,18 @@ public class Pessoa {
 
     public void setEmagrecer(double magro) {
         pesoNovo = pesoNovo - magro;
+    }
+    //Obs: Por padrão,
+    //a cada ano que nossa pessoa envelhece, sendo a idade dela menor
+    //que 21 anos, ela deve crescer 0,5 cm.
+    public void setCrescer(double crescer){
+        if (idadeNova < 21){
+            alturaNova = altura + 0.5;
+
+            // sendo maior que 21 não cresce, continua com a altura atual.
+        }else if(idadeNova > 21){
+            alturaNova = altura;
+            System.out.println("Permanece com a Altura atual!");
+        }
     }
 }
