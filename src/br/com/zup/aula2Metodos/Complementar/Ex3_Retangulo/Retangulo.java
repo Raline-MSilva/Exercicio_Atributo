@@ -9,6 +9,8 @@ Altura, a escolher)
 public class Retangulo {
     private double ladoA;
     private double ladoB;
+    private double area;
+    private double perimetro;
 
     public double getLadoA(){
         return ladoA;
@@ -16,17 +18,32 @@ public class Retangulo {
     public double getLadoB(){
         return ladoB;
     }
+    public double getArea(){
+        return area;
+    }
+    public double getPerimetro(){
+        return perimetro;
+    }
 
     public Retangulo (double ladoA, double ladoB){
         this.ladoA = ladoA;
         this.ladoB = ladoB;
+        this.area = area;
     }
-    public void setMudarValorDosLados(double novosLados){
-        ladoA = novosLados;
-        ladoB = novosLados;
+    public void setMudarValorDosLados(double novoLadoA, double novoLadoB){
+        ladoA = novoLadoA;
+        ladoB = novoLadoB;
     }
     public void setRetornaLados(){
         System.out.println("LadoA: " + ladoA);
         System.out.println("LadoB: " + ladoB);
+    }
+    public void setCalcularArea(){
+        area = ladoA * ladoB;
+        System.out.println("Area: " + area);
+    }
+    public void setCalcularPerimetro(){
+        perimetro = (ladoA * 2) + (ladoB * 2);
+        System.out.println("Perímetro: " + perimetro);
     }
 }
