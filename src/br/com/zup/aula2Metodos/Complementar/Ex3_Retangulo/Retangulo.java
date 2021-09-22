@@ -28,8 +28,8 @@ public class Retangulo {
     public Retangulo (double ladoA, double ladoB){
         this.ladoA = ladoA;
         this.ladoB = ladoB;
-        this.area = area;
     }
+    //obtendo dois valores
     public void setMudarValorDosLados(double novoLadoA, double novoLadoB){
         ladoA = novoLadoA;
         ladoB = novoLadoB;
@@ -38,6 +38,7 @@ public class Retangulo {
         System.out.println("LadoA: " + ladoA);
         System.out.println("LadoB: " + ladoB);
     }
+    //calculos
     public void setCalcularArea(){
         area = ladoA * ladoB;
         System.out.println("Area: " + area);
