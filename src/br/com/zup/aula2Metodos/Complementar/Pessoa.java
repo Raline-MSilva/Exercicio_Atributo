@@ -1,4 +1,5 @@
 package br.com.zup.aula2Metodos.Complementar;
+
 /*
 Classe Pessoa: Crie uma classe que modele uma pessoa:
 1. Atributos: nome, idade, peso e altura
@@ -15,45 +16,55 @@ public class Pessoa {
     private int idadeNova;
     private double alturaNova;
 
-    public Pessoa (){
+    public Pessoa() {
 
     }
-    public Pessoa (String nome, int idade, double peso, double altura){
+
+    public Pessoa(String nome, int idade, double peso, double altura) {
         this.nome = nome;
         this.idade = idade;
         this.peso = peso;
         this.altura = altura;
 
     }
-    public String getNome(){
+
+    public String getNome() {
         return nome;
     }
-    public int getIdade(){
+
+    public int getIdade() {
         return idade;
     }
-    public double getPeso(){
+
+    public double getPeso() {
         return peso;
     }
-    public double getAltura(){
+
+    public double getAltura() {
         return altura;
     }
-    public double getPesoNovo(){
+
+    public double getPesoNovo() {
         return pesoNovo;
     }
-    public int getIdadeNova(){
+
+    public int getIdadeNova() {
         return idadeNova;
     }
-    public double getAlturaNova(){
+
+    public double getAlturaNova() {
         return alturaNova;
     }
-    public void setEnvelhecer(int velhice){
+
+    public void setEnvelhecer(int velhice) {
         idadeNova = idade + velhice;
     }
-    public void setEngordar(double engordar){
+
+    public void setEngordar(double engordar) {
         pesoNovo = peso + engordar;
     }
-    public void setEmagrecer(double magro){
+
+    public void setEmagrecer(double magro) {
         pesoNovo = pesoNovo - magro;
     }
-
 }
