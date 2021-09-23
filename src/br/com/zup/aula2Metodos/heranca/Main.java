@@ -12,11 +12,17 @@ public class Main {
         double dano = voa1.getTiroDano()
                 ;
         //mago recebe dano e perde vidas
+        mago1.receber(ras1.aplicarDano());
         mago1.receber(dano);
-        mago1.receber(dano);
-        System.out.println("---------------");
         System.out.println("Vida após os danos: ");
         mago1.exibirVida();
+        System.out.println("---------------");
+
+        ras1.receber(dano);
+        mago1.aplicarMagia();
+        System.out.println("Vida após os danos: ");
+        ras1.exibirVida();
+
 
 
 
