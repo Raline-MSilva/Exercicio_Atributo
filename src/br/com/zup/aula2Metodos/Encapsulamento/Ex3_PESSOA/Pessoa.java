@@ -6,42 +6,46 @@ Crie um método para calcular a idade da pessoa.
  */
 public class Pessoa {
    private String nome;
-   private int anoNascimento = 2010;
-   private int anoAtual = 2021;
+   private Data dataDeNascimento;
    private double altura;
-   private int idade;
 
-   public  Pessoa (String nome, double altura){
-       this.nome = nome;
-       this.altura = altura;
+   public Pessoa (){
 
    }
 
-   public String getNome(){
-       return nome;
-   }
-   public int getAnoNascimento(){
-       return anoNascimento;
-   }
-   public int getAnoAtual(){
-       return anoAtual;
-   }
-   public double getAltura(){
-       return altura;
-   }
-   public int getIdade(){
-       return idade;
+   public Pessoa(String nome, Data dataDeNascimento, double altura) {
+      this.nome = nome;
+      this.dataDeNascimento = dataDeNascimento;
+      this.altura = altura;
    }
 
-   public void setMostrarPessoa(){
-       System.out.println("Nome: " + getNome());
-       System.out.println("Ano nascimento: " + getAnoNascimento());
-       System.out.println("Altura: " + getAltura());
+   public String getNome() {
+      return nome;
+   }
 
-    }
-    public void setCalculoIdade(){
-       idade = getAnoAtual() - getAnoNascimento();
-        System.out.println("Idade: " + idade);
-    }
+   public void setNome(String nome) {
+      this.nome = nome;
+   }
 
+   public Data getDataDeNascimento() {
+      return dataDeNascimento;
+   }
+
+   public void setDataDeNascimento(Data dataDeNascimento) {
+      this.dataDeNascimento = dataDeNascimento;
+   }
+
+   public double getAltura() {
+      return altura;
+   }
+
+   public void setAltura(double altura) {
+      this.altura = altura;
+   }
+   //dentro da minha classe tenho poder sobre os dados, não uso os gets e sets
+   public void mostrarDados () {
+      System.out.println("Nome da pessoa: " + nome);
+      System.out.println("Data de Nascimento: " + dataDeNascimento.getDia() + "/" + dataDeNascimento.getMes() + "/" + dataDeNascimento.getAno());
+      System.out.println("Altura: " + altura);
+   }
 }
