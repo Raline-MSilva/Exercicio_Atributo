@@ -7,7 +7,7 @@ public class Main {
 
         cr.aumentarVolume();
         cr.diminuirVolume();
-        cr.trocarCanal();
+        cr.trocarCanal(4);
         System.out.println("Volume: " + tv.getVolume());
         System.out.println("Canal: " + tv.getCanal());
 

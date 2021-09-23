@@ -9,6 +9,7 @@ public class Controle_Remoto {
     public Controle_Remoto (Televisão tv){
         this.tv = tv;
     }
+    // criando métodos
     public void aumentarVolume() {
         int novoVolume = tv.getVolume() + 1;
         tv.setVolume(novoVolume);
@@ -28,8 +29,7 @@ public class Controle_Remoto {
         int novoCanal = tv.getCanal() - 1;
         tv.setCanal(novoCanal);
     }
-    public void trocarCanal() {
-        int mudarCanal = tv.getCanal() + 4;
+    public void trocarCanal(int mudarCanal) {
         tv.setCanal(mudarCanal);
 
     }

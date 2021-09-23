@@ -1,4 +1,5 @@
 package br.com.zup.aula2Metodos.Encapsulamento.ExContoleRemoto;
+
 /*
 Crie uma classe Televisão e uma classe ControleRemoto que pode controlar o volume e trocar os canais da televisão.
 O controle de volume permite:
@@ -9,29 +10,34 @@ O controle de volume permite:
 
  */
 public class Televisão {
-        private int volume;
-        private int canal;
 
-        public Televisão(){
+    //atributos
+    private int volume;
+    private int canal;
 
-        }
-        public Televisão (int volume, int canal){
-            this.volume = volume;
-            this.canal = canal;
-        }
-        public int getVolume() {
-            return volume;
-        }
+    //metodos construtores
+    public Televisão () {
 
-        public void setVolume(int volume) {
-            this.volume = volume;
-        }
+    }
 
-        public int getCanal() {
-            return canal;
-        }
+    public Televisão(int volume, int canal) {
+        this.volume = volume;
+        this.canal = canal;
+    }
 
-        public void setCanal(int canal) {
-            this.canal = canal;
-        }
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
+    public int getCanal() {
+        return canal;
+    }
+
+    public void setCanal(int canal) {
+        this.canal = canal;
+    }
 }
