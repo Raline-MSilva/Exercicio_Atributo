@@ -36,4 +36,8 @@ public class Heroi {
     public void exibirVida(){
         System.out.println("Vida: " + vida);
     }
+    public void exibirDados(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Vida: " + vida);
+    }
 }
