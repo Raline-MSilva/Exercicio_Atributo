@@ -19,8 +19,8 @@ public class Magos extends Heroi{
     public void setPoderMagico(double poderMagico) {
         this.poderMagico = poderMagico;
     }
-    public double aplicarDano(){
-        double dano = getVida() - poderMagico;
-        return dano;
+    public double aplicarMagia(){
+        double magia = getVida() - poderMagico;
+        return magia;
     }
 }
