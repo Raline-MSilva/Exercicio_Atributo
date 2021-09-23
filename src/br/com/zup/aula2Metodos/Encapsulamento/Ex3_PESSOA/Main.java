@@ -1,4 +1,4 @@
-package br.com.zup.aula2Metodos.Encapsulamento;
+package br.com.zup.aula2Metodos.Encapsulamento.Ex3_PESSOA;
 
 public class Main {
     public static void main(String[] args) {
