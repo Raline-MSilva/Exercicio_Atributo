@@ -7,7 +7,9 @@ public class Main {
 
         cr.aumentarVolume();
         cr.diminuirVolume();
+        cr.trocarCanal();
         System.out.println("Volume: " + tv.getVolume());
+        System.out.println("Canal: " + tv.getCanal());
 
     }
 }

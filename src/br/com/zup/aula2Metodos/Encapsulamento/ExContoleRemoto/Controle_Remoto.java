@@ -19,11 +19,18 @@ public class Controle_Remoto {
         tv.setVolume(novoVolume);
     }
 
-    public void trocarCanal(int canal) {
-        canal = canal + 1;
+    public void passarCanal() {
+        int novoCanal = tv.getCanal() + 1;
+        tv.setCanal(novoCanal);
     }
 
-    public void voltarCanal(int canal) {
-        canal = canal - 1;
+    public void voltarCanal() {
+        int novoCanal = tv.getCanal() - 1;
+        tv.setCanal(novoCanal);
+    }
+    public void trocarCanal() {
+        int mudarCanal = tv.getCanal() + 4;
+        tv.setCanal(mudarCanal);
+
     }
 }
