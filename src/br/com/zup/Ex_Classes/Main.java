@@ -29,6 +29,7 @@ public class Main {
         System.out.println("Nome: " + adm.getNome());
         System.out.println("Salário Bruto: " + adm.getSalarioBase());
         System.out.println("Imposto: " + adm.getImposto());
+        adm.setImposto(200);
         System.out.println("Ajuda de Custo: " + adm.getAjudaDeCustos());
         System.out.println("Salário liquido: " + adm.calcularSalario());
 
