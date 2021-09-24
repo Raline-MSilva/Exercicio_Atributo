@@ -12,11 +12,7 @@ public class Main {
         System.out.println("Crédito: " + joao.getValorCredito());
         System.out.println("Dívida: " + joao.getValorDivida());
         System.out.println("Saldo: " + joao.obterSaldo());
-        if (joao.obterSaldo() <= joao.getValorDivida()){
-            System.out.println("Você está negativado");
-        } else if (joao.obterSaldo() >= joao.getValorDivida()){
-            System.out.println("Possui saldo");
-        }
+
 
     }
 }
