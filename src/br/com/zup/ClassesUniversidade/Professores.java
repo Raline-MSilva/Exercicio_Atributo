@@ -48,4 +48,8 @@ public class Professores extends Funcionarios{
     public void setQntTurmas(int qntTurmas) {
         this.qntTurmas = qntTurmas;
     }
+    public double aumentaSalario(){
+        double aumento = getSalario() + 0.1;
+        return aumento;
+    }
 }

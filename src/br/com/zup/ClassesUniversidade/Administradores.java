@@ -14,5 +14,20 @@ public class Administradores extends Funcionarios{
         this.senoriedade = senoriedade;
     }
 
+    public String getFuncaoAdm() {
+        return funcaoAdm;
+    }
+
+    public void setFuncaoAdm(String funcaoAdm) {
+        this.funcaoAdm = funcaoAdm;
+    }
+
+    public String getSenoriedade() {
+        return senoriedade;
+    }
+
+    public void setSenoriedade(String senoriedade) {
+        this.senoriedade = senoriedade;
+    }
 
 }
