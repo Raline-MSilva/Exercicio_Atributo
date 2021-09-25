@@ -24,9 +24,4 @@ public class Cordenadores extends Funcionarios {
             System.out.println("Salario: " + getSalario());
         }
     }
-
-    public double aumentaSalario() {
-        double aumento = getSalario() + 0.5;
-        return aumento;
-    }
 }
