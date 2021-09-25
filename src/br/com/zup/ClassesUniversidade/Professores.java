@@ -5,16 +5,18 @@ public class Professores extends Funcionarios{
     private String disciplinaMinistrada;
     private int qntAlunos;
     private int qntTurmas;
+    private Turma turma;
 
     public Professores() {
     }
 
-    public Professores(String nome, String cpf, String numeroRegistro, String orgaoLotacao, double salario, String nivelGraduacao, String disciplinaMinistrada, int qntAlunos, int qntTurmas) {
+    public Professores(String nome, String cpf, String numeroRegistro, String orgaoLotacao, double salario, String nivelGraduacao, String disciplinaMinistrada, int qntAlunos, int qntTurmas, Turma turma) {
         super(nome, cpf, numeroRegistro, orgaoLotacao, salario);
         this.nivelGraduacao = nivelGraduacao;
         this.disciplinaMinistrada = disciplinaMinistrada;
         this.qntAlunos = qntAlunos;
         this.qntTurmas = qntTurmas;
+        this.turma = turma;
     }
 
     public String getNivelGraduacao() {
@@ -47,5 +49,13 @@ public class Professores extends Funcionarios{
 
     public void setQntTurmas(int qntTurmas) {
         this.qntTurmas = qntTurmas;
+    }
+
+    public Turma getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
     }
 }
