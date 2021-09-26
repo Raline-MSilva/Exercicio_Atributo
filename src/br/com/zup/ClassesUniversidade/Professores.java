@@ -5,7 +5,7 @@ public class Professores extends Funcionarios{
     private String disciplinaMinistrada;
     private int qntAlunos;
     private int qntTurmas;
-    private Turma turma;
+    public Turma turma;
 
     public Professores() {
     }
@@ -16,7 +16,6 @@ public class Professores extends Funcionarios{
         this.disciplinaMinistrada = disciplinaMinistrada;
         this.qntAlunos = qntAlunos;
         this.qntTurmas = qntTurmas;
-        this.turma = turma;
     }
 
     public String getNivelGraduacao() {
@@ -57,5 +56,8 @@ public class Professores extends Funcionarios{
 
     public void setTurma(Turma turma) {
         this.turma = turma;
+    }
+    public void turmaNova(Turma addTurma){
+        turma = addTurma;
     }
 }

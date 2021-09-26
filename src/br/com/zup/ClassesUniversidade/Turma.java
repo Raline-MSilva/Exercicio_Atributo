@@ -2,13 +2,13 @@ package br.com.zup.ClassesUniversidade;
 
 public class Turma {
     private String anoTurma;
-    private String notaTurma;
-    private String numAlunos;
+    private int notaTurma;
+    private int numAlunos;
 
     public Turma() {
     }
 
-    public Turma(String anoTurma, String notaTurma, String numAlunos) {
+    public Turma(String anoTurma, int notaTurma, int numAlunos) {
         this.anoTurma = anoTurma;
         this.notaTurma = notaTurma;
         this.numAlunos = numAlunos;
@@ -22,19 +22,19 @@ public class Turma {
         this.anoTurma = anoTurma;
     }
 
-    public String getNotaTurma() {
+    public int getNotaTurma() {
         return notaTurma;
     }
 
-    public void setNotaTurma(String notaTurma) {
+    public void setNotaTurma(int notaTurma) {
         this.notaTurma = notaTurma;
     }
 
-    public String getNumAlunos() {
+    public int getNumAlunos() {
         return numAlunos;
     }
 
-    public void setNumAlunos(String numAlunos) {
+    public void setNumAlunos(int numAlunos) {
         this.numAlunos = numAlunos;
     }
 }
