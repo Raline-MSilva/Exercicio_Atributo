@@ -10,7 +10,7 @@ public class Professores extends Funcionarios{
     public Professores() {
     }
 
-    public Professores(String nome, String cpf, String numeroRegistro, String orgaoLotacao, double salario, String nivelGraduacao, String disciplinaMinistrada, int qntAlunos, int qntTurmas, Turma turma) {
+    public Professores(String nome, String cpf, String numeroRegistro, String orgaoLotacao, double salario, String nivelGraduacao, String disciplinaMinistrada, int qntAlunos, int qntTurmas) {
         super(nome, cpf, numeroRegistro, orgaoLotacao, salario);
         this.nivelGraduacao = nivelGraduacao;
         this.disciplinaMinistrada = disciplinaMinistrada;
