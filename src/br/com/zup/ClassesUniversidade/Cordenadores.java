@@ -9,7 +9,6 @@ public class Cordenadores extends Funcionarios {
 
     public Cordenadores(String nome, String cpf, String numeroRegistro, String orgaoLotacao, double salario) {
         super(nome, cpf, numeroRegistro, orgaoLotacao, salario);
-        this.professoresSupervisionados = professoresSupervisionados;
     }
 
     public void adicionarProfessor(Professores prof) {
