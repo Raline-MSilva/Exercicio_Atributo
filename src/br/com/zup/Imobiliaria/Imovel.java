@@ -57,6 +57,7 @@ public class Imovel {
         retorno.append("Localização: " + endereco);
         retorno.append("Aluguel: " + aluguelImovel);
         retorno.append("Responsável: " + responsavelImovel);
+        retorno.append("Moradores: " +morador);
         return retorno.toString();
     }
 }
