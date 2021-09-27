@@ -1,9 +1,13 @@
 package br.com.zup.Imobiliaria;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Imovel {
     private String endereco;
     private double aluguelImovel;
     private String responsavelImovel;
+    private List<Moradores> morador = new ArrayList<>();
 
     public Imovel() {
 
@@ -37,6 +41,14 @@ public class Imovel {
 
     public void setResponsavelImovel(String responsavelImovel) {
         this.responsavelImovel = responsavelImovel;
+    }
+
+    public List<Moradores> getMorador() {
+        return morador;
+    }
+
+    public void addMorador(Moradores morador){
+        this.morador.add(morador);
     }
 
     @Override
