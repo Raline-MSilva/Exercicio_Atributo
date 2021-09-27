@@ -54,10 +54,10 @@ public class Imovel {
     @Override
     public String toString() {
         StringBuilder retorno = new StringBuilder();
-        retorno.append("\t Localização: " + endereco);
-        retorno.append("\t Aluguel: " + aluguelImovel);
-        retorno.append("\t Responsável: " + responsavelImovel);
-        retorno.append("\t Moradores: " +morador);
+        retorno.append("Localização: " + endereco + ".");
+        retorno.append("\t Aluguel: " + aluguelImovel + ".");
+        retorno.append("\t Responsável: " + responsavelImovel + ".");
+        retorno.append("\t Moradores: " +morador + ".");
         return retorno.toString();
     }
 }

@@ -33,7 +33,7 @@ public class Moradores {
     public String toString(){
         StringBuilder retorno = new StringBuilder();
         retorno.append("Nome: " + nome);
-        retorno.append("CPF: " + cpf);
+        retorno.append("\tCPF: " + cpf);
         return retorno.toString();
     }
 }
