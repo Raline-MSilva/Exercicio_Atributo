@@ -6,9 +6,11 @@ public class Main {
         Professores prof1 = new Professores("Maria", "457896", "45879", "direita", 1254789,"Bacharel", "Java", 25, 3);
         Professores prof2 = new Professores("Ana", "1235698","5896","temporário", 1500,"bacharel","artes", 15, 4);
         Turma turma1 = new Turma("Sexto Ano", 10,45);
+        Turma turma2 = new Turma("Quinto Ano", 9, 30);
 
         cord.adicionarProfessor(prof1);
         cord.exibirProfessores();
+        System.out.println("--------------------");
 
         //add turma
         prof1.turmaNova(turma1);
@@ -19,6 +21,8 @@ public class Main {
         //add prof2
         cord.adicionarProfessor(prof2);
         cord.exibirProfessores();
+        System.out.println("--------------------");
+        prof2.turmaNova(turma2);
         prof2.setSalario(prof2.aumentaSalario());
         cord.exibirProfessores();
 

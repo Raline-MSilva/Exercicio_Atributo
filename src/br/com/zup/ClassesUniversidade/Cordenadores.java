@@ -20,7 +20,8 @@ public class Cordenadores extends Funcionarios {
             System.out.println("Nome do Professor: " + referencia.getNome());
             System.out.println("Nivel senioridade: " + referencia.getNivelGraduacao());
             System.out.println("Disciplina Administrada: " + referencia.getDisciplinaMinistrada());
-            System.out.println("Salario: " + getSalario());
+            System.out.println("Salario: " + referencia.getSalario());
+            System.out.println("Quantidade de Turma: " + referencia.getQntTurmas());
         }
     }
     @Override
