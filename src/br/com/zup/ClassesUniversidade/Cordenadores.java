@@ -26,7 +26,7 @@ public class Cordenadores extends Funcionarios {
     }
     @Override
     public double aumentaSalario(){
-        double salarioNovo = getSalario() * 0.1;
+        double salarioNovo = (getSalario() * 0.05) + getSalario();
         return salarioNovo;
     }
 }

@@ -8,8 +8,11 @@ public class Main {
 
         cord.adicionarProfessor(prof1);
         cord.exibirProfessores();
+
+        //add turma
         prof1.turmaNova(turma1);
-        System.out.println(prof1.getQntAlunos());
+        prof1.setSalario(prof1.aumentaSalario());
+        cord.exibirProfessores();
 
 
     }

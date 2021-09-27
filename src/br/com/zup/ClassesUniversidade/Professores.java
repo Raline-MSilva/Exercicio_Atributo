@@ -1,6 +1,6 @@
 package br.com.zup.ClassesUniversidade;
 
-public class Professores extends Funcionarios{
+public class Professores extends Funcionarios {
     private String nivelGraduacao;
     private String disciplinaMinistrada;
     private int qntAlunos;
@@ -57,7 +57,8 @@ public class Professores extends Funcionarios{
     public void setTurma(Turma turma) {
         this.turma = turma;
     }
-    public void turmaNova(Turma addTurma){
+
+    public void turmaNova(Turma addTurma) {
         turma = addTurma;
     }
 }

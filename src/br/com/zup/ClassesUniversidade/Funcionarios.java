@@ -60,7 +60,7 @@ public class Funcionarios {
     }
 
     public double aumentaSalario(){
-        double salarioNovo = getSalario() * 0.1;
+        double salarioNovo = (getSalario() * 0.1) + getSalario();
         return salarioNovo;
     }
 
