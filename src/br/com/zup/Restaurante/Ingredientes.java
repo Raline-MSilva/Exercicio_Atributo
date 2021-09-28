@@ -18,9 +18,5 @@ public class Ingredientes {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String toString (){
-        StringBuilder retorno = new StringBuilder();
-        return retorno.toString();
-    }
 
 }
