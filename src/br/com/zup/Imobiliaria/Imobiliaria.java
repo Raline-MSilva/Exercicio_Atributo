@@ -25,4 +25,11 @@ public class Imobiliaria {
     public void addImovel(Imovel imovel){
         this.imovels.add(imovel);
     }
+
+    @Override
+    public String toString (){
+        StringBuilder retorno = new StringBuilder();
+        retorno.append("Imoveis" + imovels);
+        return retorno.toString();
+    }
 }
