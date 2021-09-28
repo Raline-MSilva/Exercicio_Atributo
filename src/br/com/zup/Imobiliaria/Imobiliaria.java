@@ -29,7 +29,7 @@ public class Imobiliaria {
     @Override
     public String toString (){
         StringBuilder retorno = new StringBuilder();
-        retorno.append("Imoveis" + imovels);
+        retorno.append("Imoveis" + getImovels());
         return retorno.toString();
     }
 }
