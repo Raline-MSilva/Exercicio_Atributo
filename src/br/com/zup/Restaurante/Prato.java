@@ -35,10 +35,10 @@ public class Prato {
 
     @Override
     public String toString() {
-        return "Prato{" +
-                "nome='" + nome + '\'' +
-                ", valor=" + valor +
-                ", ingrediente=" + ingrediente +
-                '}';
+        StringBuilder retorno = new StringBuilder();
+        retorno.append("Nome do prato: " + nome);
+        retorno.append("Valor: " + valor);
+        retorno.append("Ingredientes: " + ingrediente);
+        return retorno.toString();
     }
 }
