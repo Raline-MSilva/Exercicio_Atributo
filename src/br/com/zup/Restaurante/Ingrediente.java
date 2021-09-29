@@ -1,13 +1,13 @@
 package br.com.zup.Restaurante;
 
-public class Ingredientes {
+public class Ingrediente {
     private String nome;
 
-    public Ingredientes() {
+    public Ingrediente() {
 
     }
 
-    public Ingredientes(String nome) {
+    public Ingrediente(String nome) {
         this.nome = nome;
     }
 
@@ -21,8 +21,8 @@ public class Ingredientes {
 
     @Override
     public String toString() {
-        return "Ingredientes{" +
-                "nome='" + nome + '\'' +
-                '}';
+        StringBuilder retorno = new StringBuilder();
+        retorno.append("\tIngrediente: " + nome);
+        return retorno.toString();
     }
 }

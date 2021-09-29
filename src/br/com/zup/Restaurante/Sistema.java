@@ -24,9 +24,9 @@ public class Sistema {
         Prato pratos = new Prato(nome, valor);
         return pratos;
     }
-    public static Ingredientes cadastrarIngrediente(){
-        String nome = capturarDados("Digite 1 Imgrediente que deseja: ").nextLine();
-        Ingredientes ingrediente = new Ingredientes(nome);
+    public static Ingrediente cadastrarIngrediente(){
+        String nome = capturarDados("Digite 1 Ingrediente: ").nextLine();
+        Ingrediente ingrediente = new Ingrediente(nome);
         return ingrediente;
     }
     //executando as opções

@@ -6,7 +6,7 @@ import java.util.List;
 public class Prato {
     private String nome;
     private double valor;
-    private List<Ingredientes> ingrediente = new ArrayList<>();
+    private List<Ingrediente> ingrediente = new ArrayList<>();
 
     public Prato() {
 
@@ -26,19 +26,19 @@ public class Prato {
         return valor;
     }
 
-    public List<Ingredientes> getIngrediente() {
+    public List<Ingrediente> getIngrediente() {
         return ingrediente;
     }
-    public void addIngrediente(Ingredientes ingrediente){
+    public void addIngrediente(Ingrediente ingrediente){
         this.ingrediente.add(ingrediente);
     }
 
     @Override
     public String toString() {
         StringBuilder retorno = new StringBuilder();
-        retorno.append("Nome do prato: " + nome);
-        retorno.append("Valor: " + valor);
-        retorno.append("Ingredientes: " + ingrediente);
+        retorno.append("\tNome do prato: " + nome);
+        retorno.append("\tValor: " + valor);
+        retorno.append("\tIngredientes: " + ingrediente);
         return retorno.toString();
     }
 }
