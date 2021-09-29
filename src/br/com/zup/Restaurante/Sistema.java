@@ -13,15 +13,14 @@ public class Sistema {
     public static void menu() {
         System.out.println("*** RESTAURANTE TEMPERO DE MAINHA ***");
         System.out.println("Digite 1 - Para cadastrar um prato.");
-        System.out.println("Digite 2 - Para adicionar um ingrediente.");
-        System.out.println("Digite 3 - Para exibir os pratos cadastrados.");
+        System.out.println("Digite 3 - Para exibir o Cardápio.");
         System.out.println("Digite 4 - Para sair do Restaurante.");
 
     }
     //cadastrar pratos
     public static Prato cadastrarPrato(){
         String nome = capturarDados ("Digite o nome do prato: ").nextLine();
-        double valor = capturarDados("Digite o valor do prato: ").nextDouble();
+        double valor = capturarDados("Digite o valor do prato R$: ").nextDouble();
         Prato pratos = new Prato(nome, valor);
         return pratos;
     }
@@ -29,5 +28,21 @@ public class Sistema {
         String nome = capturarDados("Digite 1 Imgrediente que deseja: ").nextLine();
         Ingredientes ingrediente = new Ingredientes(nome);
         return ingrediente;
+    }
+    //executando as opções
+    public static void Executar(){
+        boolean menu = true;
+        Restaurante restaurante = new Restaurante();
+
+        while (menu){
+            menu();
+            int opcaoDesejada = capturarDados("Digite a opção que deseja: ").nextInt();
+
+            if (opcaoDesejada == 1){
+                Prato pratoNovo = cadastrarPrato();
+                pratoNovo.addIngrediente(cadastrarIngrediente());
+                System.out.println(pratoNovo);
+            }
+        }
     }
 }

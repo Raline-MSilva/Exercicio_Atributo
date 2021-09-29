@@ -19,4 +19,10 @@ public class Ingredientes {
         this.nome = nome;
     }
 
+    @Override
+    public String toString() {
+        return "Ingredientes{" +
+                "nome='" + nome + '\'' +
+                '}';
+    }
 }
