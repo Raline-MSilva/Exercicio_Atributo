@@ -23,7 +23,7 @@ public class Cardápio {
     @Override
     public String toString() {
         StringBuilder retorno = new StringBuilder();
-        retorno.append("\n Os pratos são: " + pratos);
+        retorno.append("Os pratos são:\n " + pratos);
         return retorno.toString();
     }
 }

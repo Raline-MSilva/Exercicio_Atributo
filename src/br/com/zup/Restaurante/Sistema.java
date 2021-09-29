@@ -25,7 +25,7 @@ public class Sistema {
         return pratos;
     }
     public static Ingrediente cadastrarIngrediente(){
-        String nome = capturarDados("Digite 1 Ingrediente: ").nextLine();
+        String nome = capturarDados("Digite o Ingrediente: ").nextLine();
         Ingrediente ingrediente = new Ingrediente(nome);
         return ingrediente;
     }
@@ -41,9 +41,15 @@ public class Sistema {
             //navegando pelo menu
             if (opcaoDesejada == 1){
                 Prato pratoNovo = cadastrarPrato();
-                pratoNovo.addIngrediente(cadastrarIngrediente());
                 cardapio.addPrato(pratoNovo);
-                System.out.println(pratoNovo);
+
+                //submenu para adicionar mais de um ingrediente ao prato
+                    int opcao = capturarDados("Digite a quantidade de ingredientes que deseja: ").nextInt();
+                for (int i = 0; i < opcao; i++) {
+                    Ingrediente ingrediente = cadastrarIngrediente();
+                    pratoNovo.addIngrediente(ingrediente);
+                    //System.out.println(pratoNovo);
+                }
             } else if (opcaoDesejada == 2){
                 System.out.println(cardapio);
             }else if (opcaoDesejada == 3){

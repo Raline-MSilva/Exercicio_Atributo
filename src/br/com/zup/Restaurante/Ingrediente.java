@@ -22,7 +22,7 @@ public class Ingrediente {
     @Override
     public String toString() {
         StringBuilder retorno = new StringBuilder();
-        retorno.append("\tIngrediente: " + nome);
+        retorno.append(nome);
         return retorno.toString();
     }
 }
